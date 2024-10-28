@@ -1,0 +1,717 @@
+/* Estilos Generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .navbar-brand img {
+    max-width: 120px;
+}
+
+header nav .nav-link {
+    font-weight: 500;
+    color: #333;
+    transition: color 0.3s;
+}
+
+header nav .nav-link:hover {
+    color: #007bff;
+}
+
+header nav .btn-warning {
+    color: #fff;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+header nav .btn-warning:hover {
+    transform: scale(1.1);
+}
+
+/* Sección Hero */
+.hero {
+    background: linear-gradient(to right, #e0f7fa, #ffffff);
+    color: #333;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.hero h1 {
+    color: #007bff;
+    font-size: 2.5rem;
+    animation: fadeInDown 1.5s;
+}
+
+.hero .text-primary {
+    color: #ff6600;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    animation: fadeIn 2s;
+}
+
+.hero .btn {
+    font-size: 1.1rem;
+    padding: 0.8rem 1.5rem;
+    transition: all 0.3s;
+}
+
+.hero .btn-success {
+    background-color: #28a745;
+    border: none;
+}
+
+.hero .btn-success:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.hero .btn-outline-success {
+    border: 2px solid #28a745;
+    color: #28a745;
+}
+
+.hero .btn-outline-success:hover {
+    background-color: #28a745;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Botón de Información Flotante */
+.floating-contact {
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    background-color: #ff6600;
+    color: #fff;
+    padding: 1rem;
+    font-weight: bold;
+    transition: all 0.3s;
+    text-align: center;
+}
+
+.floating-contact:hover {
+    background-color: #e65c00;
+    transform: translateY(-50%) scale(1.1);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #ddd;
+}
+
+footer p, footer a {
+    color: #ddd;
+    font-size: 14px;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+footer .bi {
+    font-size: 24px;
+    color: #ddd;
+}
+
+footer .bi:hover {
+    color: #fff;
+}
+
+/* Botón flotante de WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #25D366;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.whatsapp-float img {
+    width: 50px;
+    height: 50px;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+/* Animaciones */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Estilos para la sección de propiedades */
+.properties-section {
+    background-color: #f9f9f9;
+}
+
+.properties-section h2 {
+    color: #333;
+    font-weight: bold;
+}
+
+/* Estilos para las tarjetas de propiedades */
+.property-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.property-card:hover {
+    transform: scale(1.02);
+}
+
+.property-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.property-card-body {
+    padding: 15px;
+}
+
+.property-card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.property-card-price {
+    color: #28a745;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* Botones */
+.btn-view-details, .btn-add-favorite {
+    width: 100%;
+    margin-top: 10px;
+    transition: all 0.3s;
+}
+
+.btn-view-details:hover, .btn-add-favorite:hover {
+    transform: scale(1.05);
+}
+
+/* Sección de Contacto */
+.contact-section {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Información de Contacto */
+.contact-section .col-md-5 h4 {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.contact-section p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.contact-section .social-icons a {
+    font-size: 1.5rem;
+    color: #555;
+    transition: color 0.3s;
+}
+
+.contact-section .social-icons a:hover {
+    color: #007bff;
+}
+
+/* Formulario de Contacto */
+#contactForm .form-label {
+    font-weight: bold;
+    color: #333;
+}
+
+#contactForm .form-control {
+    border-radius: 8px;
+    padding: 0.8rem;
+    font-size: 1rem;
+}
+
+#contactForm .btn-primary {
+    background-color: #007bff;
+    border: none;
+    font-size: 1.1rem;
+    padding: 0.75rem;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+#contactForm .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para la Sección Nosotros */
+.about-section {
+    background-color: #f9f9f9;
+}
+
+.about-section h2, .about-section h3 {
+    color: #333;
+    font-weight: bold;
+}
+
+/* Iconos de Misión, Visión, Valores */
+.icon-box {
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.icon-box i {
+    font-size: 2.5rem;
+    color: #007bff;
+}
+
+.icon-box:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos para la Sección de Equipo */
+.team-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-img {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover .team-img {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.team-member h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Línea de Tiempo */
+.timeline {
+    position: relative;
+    padding: 20px 0;
+    margin: 40px 0;
+    border-left: 3px solid #007bff;
+}
+
+.timeline-item {
+    position: relative;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.timeline-date {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+.timeline-content {
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -9px;
+    top: 20px;
+    width: 15px;
+    height: 15px;
+    background-color: #007bff;
+    border-radius: 50%;
+}
+
+/* Estilos generales */
+.section-title {
+    font-size: 2rem;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Estilos generales */
+.section-title {
+    font-size: 2rem;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Quiénes Somos */
+.about-section .about-img {
+    border-radius: 50% 50% 50% 50% / 30% 30% 70% 70%;
+    border: 5px solid #007bff;
+    width: 100%;
+    max-width: 350px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Misión y Visión */
+.values-section .card {
+    border: none;
+    transition: transform 0.3s ease;
+    padding: 20px;
+    text-align: center;
+}
+
+.values-section .card:hover {
+    transform: scale(1.05);
+}
+
+/* Imágenes circulares en Misión y Visión */
+.values-section .card-img-top {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 15px auto;
+    border: 5px solid #007bff; /* Borde alrededor del círculo */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+.values-section .card-title {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.values-section .card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Etiquetas de valores */
+.tags .badge {
+    font-size: 0.9rem;
+    margin: 5px 5px 0 0;
+    padding: 8px 12px;
+}
+
+/* Estilo del Título de la Sección en el Centro */
+.section-title {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #007bff;
+    margin: 10px auto 0;
+}
+
+/* Estilos de la Sección de Equipo */
+.team-section {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.team-member {
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 15px; /* Espaciado adicional entre los miembros del equipo */
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagenes del Equipo */
+.team-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #007bff;
+    object-fit: cover;
+    transition: border 0.3s ease;
+}
+
+.team-member:hover .team-img {
+    border-color: #ff7b7b; /* Cambia el color del borde al hacer hover */
+}
+
+/* Nombre del Miembro del Equipo */
+.team-member h5 {
+    font-size: 1.3rem;
+    color: #333;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Título o Cargo del Miembro */
+.team-member p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+/* Estilos Generales Responsivos */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+@media (max-width: 992px) {
+    /* Ajustes para pantallas medianas (tabletas) */
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    /* Botones más pequeños en pantallas medianas */
+    .hero .btn {
+        font-size: 1rem;
+        padding: 0.6rem 1.2rem;
+    }
+
+    .team-section {
+        gap: 20px;
+    }
+
+    /* Tamaño de las imágenes del equipo en tabletas */
+    .team-img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Ajustes para pantallas pequeñas (teléfonos) */
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    /* Sección Hero */
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    /* Botones en dispositivos móviles */
+    .hero .btn {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+
+    /* Encabezado: Ajuste de Navegación */
+    header nav .nav-link {
+        font-size: 0.9rem;
+    }
+
+    /* Ajuste del botón de WhatsApp en pantallas pequeñas */
+    .whatsapp-float img {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Distribución de la sección de equipo en una sola columna */
+    .team-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    /* Tamaño de imágenes del equipo en dispositivos móviles */
+    .team-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* Sección de Contacto */
+    .contact-section h2 {
+        font-size: 2rem;
+    }
+
+    .contact-section .col-md-5 h4 {
+        font-size: 1.2rem;
+    }
+
+    .contact-section p {
+        font-size: 0.9rem;
+    }
+
+    /* Formulario de Contacto */
+    #contactForm .form-control {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+    }
+
+    #contactForm .btn-primary {
+        font-size: 1rem;
+        padding: 0.6rem;
+    }
+
+    /* Sección Nosotros: Ajuste de imagen */
+    .about-section .about-img {
+        max-width: 250px;
+    }
+
+    /* Tarjetas en Misión y Visión */
+    .values-section .card-img-top {
+        width: 120px;
+        height: 120px;
+    }
+
+    .values-section .card-title {
+        font-size: 1.1rem;
+    }
+
+    .values-section .card-text {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Ajustes para pantallas extra pequeñas (teléfonos en modo vertical) */
+
+    /* Tamaños de fuente más pequeños para títulos */
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    /* Espaciado más compacto en la sección Hero */
+    .hero {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    /* Disposición en una sola columna para las propiedades */
+    .properties-section .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Ajuste de tamaño para tarjetas de propiedades */
+    .property-card {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    /* Sección del Equipo: imágenes más pequeñas */
+    .team-img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .team-member h5 {
+        font-size: 1rem;
+    }
+
+    .team-member p {
+        font-size: 0.8rem;
+    }
+
+    /* Formulario de Contacto: tamaño reducido en pantallas pequeñas */
+    #contactForm .form-control {
+        font-size: 0.8rem;
+        padding: 0.5rem;
+    }
+
+    #contactForm .btn-primary {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    /* Ajustes para el Footer en dispositivos pequeños */
+    footer p, footer a {
+        font-size: 12px;
+    }
+
+    footer .bi {
+        font-size: 20px;
+    }
+}

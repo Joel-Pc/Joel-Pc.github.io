@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inmobiliaria-Ecosem</title>
+    <link rel="icon" href="icono.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="header"></div>
+
+    <!-- Sección de Propiedades -->
+    <section class="properties-section py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Nuestras Propiedades</h2>
+
+            <!-- Filtros -->
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <select id="filterPrice" class="form-select">
+                        <option value="">Filtrar por Precio</option>
+                        <option value="300000">$300,000 o menos</option>
+                        <option value="500000">$500,000 o menos</option>
+                        <option value="700000">$700,000 o menos</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <select id="filterLocation" class="form-select">
+                        <option value="">Filtrar por Ubicación</option>
+                        <option value="playa">Playa</option>
+                        <option value="ciudad">Ciudad</option>
+                        <option value="montaña">Montaña</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <button id="clearFilters" class="btn btn-outline-secondary w-100">Limpiar Filtros</button>
+                </div>
+            </div>
+
+            <!-- Lista de Propiedades -->
+            <div id="propertiesList" class="row">
+                <!-- Aquí se mostrarán las propiedades con JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="loadFooter.js"></script>
+    <script src="propiedades.js"></script>
+</body>
+
+</html>
